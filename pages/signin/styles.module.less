@@ -1,0 +1,159 @@
+.fullContainerView {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+}
+.mobileContainer2 {
+  background-color: var(--theme);
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.leftDiv {
+  width: 50%;
+  height: 100%;
+  background-color: @primary;
+  padding: 0px 22rem 0px 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media @xxl {
+    padding: 0px 15rem 0px 5rem;
+  }
+  @media @xl {
+    padding: 0px 5rem 0px 3rem;
+  }
+}
+.rightDiv {
+  width: 50%;
+  height: 100%;
+  background-color: var(--theme);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 100%;
+}
+.cornerImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30vh;
+}
+.titleText2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: @white;
+  margin-bottom: 1rem;
+  line-height: 3.2rem;
+  @media @sm {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  @media @xs {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+.subTitleText2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: @white;
+  margin: 0px;
+  @media @sm {
+    font-size: 1rem;
+    text-align: center;
+  }
+  @media @xs {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+.logoContainer2 {
+  height: fit-content;
+  display: flex;
+  margin: 2rem auto;
+}
+.roundcontainer2 {
+  background-color: @primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-left-radius: 200%;
+  border-bottom-right-radius: 200%;
+  width: 150vw;
+  margin-left: -25vw;
+  flex: 1;
+}
+.formContainerLg {
+  width: 100%;
+}
+.formContainer2 {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  padding: 3rem 3rem 1rem 3rem;
+  justify-content: center;
+  align-items: center;
+  & > .ant-form {
+    width: 100%;
+  }
+}
+.bigText {
+  font-size: 2rem !important;
+  padding-left: 0.6rem;
+}
+.fLogoText2 {
+  font-size: 2.4rem;
+  margin-left: 1rem;
+}
+
+.welcomeTextSmall {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.welcomeTextBig {
+  font-size: 1.5rem;
+}
+.bottomText {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.bottomFlexDiv {
+  width: 100%;
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.socialLoginContainer {
+  display: flex;
+  justify-content: center;
+}
+.googleBtn {
+  height: 59.8px !important;
+  border: 0.2px solid black;
+  padding: 8px;
+  @media @sm {
+    height: 49.8px !important;
+  }
+}
+.socialLoginButtons {
+  height: 60px;
+  margin: 0px 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: @lightTheme;
+  @media @sm {
+    height: 50px !important;
+  }
+  &:hover {
+    box-shadow: 0px 0px 5px 0.2px @primary;
+  }
+}

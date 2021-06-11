@@ -1,0 +1,483 @@
+:root {
+  --theme: #fefefe;
+  --themeText: #222222;
+  --themeTextSecondary: #b8b9bb;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+  margin: 0px;
+  color: var(--themeText) !important;
+  background-color: var(--theme) !important;
+}
+.robotoFamily {
+  font-family: "Roboto", sans-serif !important;
+}
+.nunitoFamily {
+  font-family: "Nunito Sans", sans-serif !important;
+}
+.montFamily {
+  font-family: "Monteserrat", sans-serif !important;
+}
+.primaryColor {
+  color: @primary !important;
+}
+.primaryBg {
+  background-color: @primary !important;
+}
+.primaryLightColor {
+  color: @primaryLight !important;
+}
+.primaryLightBg {
+  background-color: @primaryLight !important;
+}
+.pinkColor {
+  color: @pink;
+}
+.pinkBg {
+  background-color: @pink;
+}
+.orangeColor {
+  color: @orange;
+}
+.orangeBg {
+  background-color: @orange;
+}
+.blueColor {
+  color: @blue;
+}
+.blueBg {
+  background-color: @blue;
+}
+.whiteColor {
+  color: @white !important;
+}
+.greyColor {
+  color: @textSecondary !important;
+}
+.primaryBtn {
+  background-color: @primary;
+  border-end-start-radius: 50%;
+  color: white;
+  padding: 1.5rem;
+}
+.bold {
+  font-weight: bold !important;
+}
+.semiBold {
+  font-weight: 600 !important;
+}
+.logoText {
+  font-family: "Nunito Sans", sans-serif !important;
+  font-weight: 800 !important;
+  color: var(--themeText);
+}
+.logoText-light {
+  font-family: "Nunito Sans", sans-serif !important;
+  font-weight: 800 !important;
+  color: @lightTheme;
+}
+.colFlex {
+  display: flex !important;
+  flex-direction: column;
+}
+.rowFlex {
+  display: flex !important;
+  flex-direction: row;
+}
+.justifyCenter {
+  justify-content: center;
+}
+.alignCenter {
+  align-items: center;
+}
+.textCenter {
+  text-align: center;
+}
+.allCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+//Shadows
+@text-shadow-theme: 0px 0px 2px @lightTheme !important;
+@text-shadow-primary: 0px 0px 2px @primary !important;
+
+.noSelect {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+//! Common Components Styles
+.headerSearchBar {
+  width: 450px;
+  @media @sm {
+    width: 100%;
+  }
+}
+.horScrollRow {
+  @media @sm {
+    width: 100vw !important;
+    overflow: hidden;
+    overflow-x: auto;
+    //!OVERRIDEEN ANT STYLES
+    /* width */
+    &::-webkit-scrollbar {
+      width: 0px !important;
+      height: 0px;
+    }
+    padding: 18px 0px;
+  }
+}
+.layoutContainer {
+  margin: 0px auto;
+  min-height: 100vh;
+  max-width: 75vw;
+  padding: 1rem 2rem;
+  padding-top: 0rem !important;
+  background-color: var(--theme);
+  @media (max-width: 1600px) {
+    max-width: 100vw;
+    padding: 1rem 0rem;
+    width: calc(100vw - 6rem);
+  }
+  @media @sm {
+    width: calc(100vw - 2rem);
+  }
+}
+
+//!OVERRIDEEN ANT STYLES
+.ant-affix {
+  z-index: 12;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px !important;
+}
+.ant-drawer-body {
+  color: var(--themeText) !important;
+  background-color: var(--theme) !important;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darken(@primary, -10%);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken(@primary, -10%);
+}
+
+.ant-tag {
+  border-radius: 20px;
+}
+.ant-badge-count {
+  background-color: @primary;
+}
+.ant-switch-checked .ant-switch-handle {
+  left: calc(100% - 20px);
+}
+.ant-message-notice-content {
+  color: @darkBlack;
+}
+.ant-picker {
+  width: 100% !important;
+  height: 38px !important;
+  border: 0px !important;
+  border-radius: 10px !important;
+  &-cell-in-view,
+  &-ant-picker-dropdown {
+    color: @textPrimary !important;
+  }
+  &-suffix {
+    color: @primary !important;
+    font-size: 20px !important;
+  }
+  &-clear {
+    background: transparent !important;
+    color: var(--themeText) !important;
+  }
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: 0px;
+  border-radius: 10px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background-color: #2ebaab1a;
+}
+.ant-select-dropdown {
+  border-radius: 10px;
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: @primary !important;
+}
+.ant-select-item {
+  color: @darkTheme !important;
+}
+.ant-select-arrow {
+  color: @primary;
+  font-size: 13px;
+}
+.ant-avatar {
+  background-color: @primaryLight;
+}
+.ant-input {
+  color: @darkBlack;
+}
+.ant-btn-primary-lg {
+  box-shadow: 0px 10x 20px rgba(54, 53, 52, 0.219) !important;
+  font-weight: 500 !important;
+  padding: 6.4px 35px !important;
+  color: @textPrimary;
+}
+.ant-btn {
+  font-weight: 500 !important;
+}
+.ant-modal-content {
+  overflow: hidden !important;
+  border-radius: 20px !important;
+}
+.ant-modal-footer {
+  & .ant-btn {
+    color: @textPrimary;
+    &-primary {
+      color: @white;
+    }
+  }
+}
+.ant-divider-horizontal {
+  border-color: var(--themeTextSecondary) !important;
+  color: var(--themeTextSecondary) !important;
+}
+.ant-dropdown-menu-item {
+  & span {
+    color: @textPrimary !important;
+  }
+}
+.ant-notification {
+  & .ant-notification-notice-description {
+    color: @textPrimary;
+  }
+}
+.ant-picker {
+  background-color: #2ebaab1a !important;
+  width: 100% !important;
+}
+.ant-picker-time-panel-cell-inner {
+  color: @darkTheme !important;
+}
+.ant-picker-ant-picker-dropdown,
+.ant-picker-input > input {
+  color: var(--themeText) !important;
+}
+.w100 {
+  width: 100% !important;
+}
+//bootstap like classes
+.m-0 {
+  margin: 0rem !important;
+}
+.m-1 {
+  margin: 1rem !important;
+}
+.m-2 {
+  margin: 2rem !important;
+}
+.m-3 {
+  margin: 3rem !important;
+}
+.m-4 {
+  margin: 4rem !important;
+}
+.m-5 {
+  margin: 5rem !important;
+}
+.mt-0 {
+  margin-top: 0rem !important;
+}
+.mt-1 {
+  margin-top: 1rem !important;
+}
+.mt-2 {
+  margin-top: 2rem !important;
+}
+.mt-3 {
+  margin-top: 3rem !important;
+}
+.mt-4 {
+  margin-top: 4rem !important;
+}
+.mt-5 {
+  margin-top: 5rem !important;
+}
+.mb-0 {
+  margin-bottom: 0rem !important;
+}
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+.mb-3 {
+  margin-bottom: 3rem !important;
+}
+.mb-4 {
+  margin-bottom: 4rem !important;
+}
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+.ml-0 {
+  margin-left: 0rem !important;
+}
+.ml-1 {
+  margin-left: 1rem !important;
+}
+.ml-2 {
+  margin-left: 2rem !important;
+}
+.ml-3 {
+  margin-left: 3rem !important;
+}
+.ml-4 {
+  margin-left: 4rem !important;
+}
+.ml-5 {
+  margin-left: 5rem !important;
+}
+.mr-0 {
+  margin-right: 0rem !important;
+}
+.mr-1 {
+  margin-right: 1rem !important;
+}
+.mr-2 {
+  margin-right: 2rem !important;
+}
+.mr-3 {
+  margin-right: 3rem !important;
+}
+.mr-4 {
+  margin-right: 4rem !important;
+}
+.mr-5 {
+  margin-right: 5rem !important;
+}
+//
+.p-0 {
+  padding: 0rem !important;
+}
+.p-1 {
+  padding: 1rem !important;
+}
+.p-2 {
+  padding: 2rem !important;
+}
+.p-3 {
+  padding: 3rem !important;
+}
+.p-4 {
+  padding: 4rem !important;
+}
+.p-5 {
+  padding: 5rem !important;
+}
+.pt-0 {
+  padding-top: 0rem !important;
+}
+.pt-1 {
+  padding-top: 1rem !important;
+}
+.pt-2 {
+  padding-top: 2rem !important;
+}
+.pt-3 {
+  padding-top: 3rem !important;
+}
+.pt-4 {
+  padding-top: 4rem !important;
+}
+.pt-5 {
+  padding-top: 5rem !important;
+}
+.pb-0 {
+  padding-bottom: 0rem !important;
+}
+.pb-1 {
+  padding-bottom: 1rem !important;
+}
+.pb-2 {
+  padding-bottom: 2rem !important;
+}
+.pb-3 {
+  padding-bottom: 3rem !important;
+}
+.pb-4 {
+  padding-bottom: 4rem !important;
+}
+.pb-5 {
+  padding-bottom: 5rem !important;
+}
+.pl-0 {
+  padding-left: 0rem !important;
+}
+.pl-1 {
+  padding-left: 1rem !important;
+}
+.pl-2 {
+  padding-left: 2rem !important;
+}
+.pl-3 {
+  padding-left: 3rem !important;
+}
+.pl-4 {
+  padding-left: 4rem !important;
+}
+.pl-5 {
+  padding-left: 5rem !important;
+}
+.pr-0 {
+  padding-right: 0rem !important;
+}
+.pr-1 {
+  padding-right: 1rem !important;
+}
+.pr-2 {
+  padding-right: 2rem !important;
+}
+.pr-3 {
+  padding-right: 3rem !important;
+}
+.pr-4 {
+  padding-right: 4rem !important;
+}
+.pr-5 {
+  padding-right: 5rem !important;
+}
+.pointer {
+  cursor: pointer !important;
+  & * {
+    cursor: pointer !important;
+  }
+}

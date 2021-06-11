@@ -1,0 +1,101 @@
+.headerMenu {
+  padding: 1rem;
+  color: @text-color-secondary;
+  cursor: pointer;
+  & svg {
+    height: 28px;
+    width: 28px;
+  }
+  &:hover,
+  &-active {
+    color: @primary;
+  }
+  @media @xs {
+    padding: 0.6rem;
+  }
+}
+.headerMenuProfile {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.3rem;
+  color: @text-color-secondary;
+  cursor: pointer;
+  .headerMenuProfileDropIcon {
+    padding: 1rem 0px 1rem 1rem;
+    color: inherit;
+    @media @xs {
+      padding: 0.6rem 0px 0.6rem 0.6rem;
+    }
+  }
+  & .ant-avatar {
+    border: 1.5px solid @primary;
+  }
+  &:hover,
+  &-active {
+    color: @primary;
+  }
+  @media @xs {
+    margin-left: 0.3rem;
+  }
+}
+.profileMenuItem {
+  background-color: #00af9c1a;
+  padding: 10px 20px;
+  color: @primary;
+  cursor: pointer;
+  & svg {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  &:hover {
+    background-color: @primaryLight;
+    color: @white;
+  }
+}
+.logoutIconProfileMenu {
+  & svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    & .path {
+      fill: @primary;
+    }
+  }
+}
+.profilePover {
+  :global {
+    .ant-popover-content {
+      border-radius: 10px !important;
+      overflow: hidden;
+    }
+    .ant-popover-arrow {
+      display: none;
+    }
+    .ant-popover-inner-content {
+      padding: 0px;
+      border-radius: 15px !important;
+    }
+  }
+}
+
+.affixHeader {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: var(--theme);
+  @media @sm {
+    width: 100vw !important;
+    margin-left: -1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0px;
+  }
+}
+
+.mobileHeader {
+  justify-content: space-between;
+}
+.mobileSearchbar {
+  padding-top: 1rem;
+  padding-bottom: 1.2rem;
+}

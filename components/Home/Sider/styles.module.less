@@ -1,0 +1,57 @@
+.siderContainer {
+  height: 100%;
+  position: relative;
+  max-height: 100vh;
+  min-width: 224px;
+}
+.logoText2 {
+  font-size: 2.4rem !important;
+  margin-left: 1rem;
+  @media @md {
+    font-size: 1.3rem !important;
+    margin-left: 0.5rem;
+  }
+}
+.plusButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50px !important;
+  width: 60px !important;
+  border-radius: 50% !important;
+  &:hover {
+    background-color: darken(@primary, 5%);
+  }
+  .plusButton {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+.menuIconWrapper {
+  margin-right: 1rem;
+}
+.menuItem {
+  margin: 25px 15px;
+  cursor: pointer;
+  & .path {
+    fill: var(--themeText);
+  }
+  &-active,
+  &:hover {
+    & span {
+      color: @primary;
+    }
+    & .path {
+      fill: @primary;
+    }
+  }
+}
+.logoutSection {
+  height: 100%;
+  display: flex;
+}
+.lastMenuSection {
+  display: flex;
+  align-items: flex-end;
+}

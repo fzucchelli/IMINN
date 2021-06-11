@@ -1,0 +1,81 @@
+//TODO: Remove Unwanted CSS
+.pitchCard {
+  cursor: pointer;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  & .privacyIcons {
+    & svg {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+}
+.formLabelIcon {
+  margin-right: 16px;
+}
+
+.teamLogos {
+  margin: 2rem 2rem 1.5rem 2rem;
+  & svg {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+.teamNameInput {
+  width: 100%;
+}
+.gameAvatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.rightBorder {
+  border-right: 1px solid #b8b9bb;
+}
+
+.sporCenterRow {
+  cursor: pointer;
+  &:hover {
+    & .t {
+      color: @primary;
+    }
+  }
+}
+.sportsCenterModal {
+  :global {
+    .ant-modal-body {
+      max-height: calc(100vh - 150px);
+      overflow: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+.profileEditImageContainer {
+  position: relative;
+  border-radius: 50%;
+}
+.hr10 {
+  margin: 10px 0px !important;
+}
+
+.roleButton3 {
+  cursor: pointer;
+  .roleName2 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  &:hover {
+    .roleName {
+      color: @primary;
+    }
+  }
+}
