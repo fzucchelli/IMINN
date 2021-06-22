@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { isEmpty } from "lodash";
 
 const CoverImg = () => {
-  const { userData } = useSelector((s) => s.auth);
+  const { userData } = useSelector(s => s.auth);
 
   return (
     <>
@@ -22,7 +22,7 @@ const CoverImg = () => {
               </Row>
               <Row align="middle">
                 <Text className="whiteColor coverText">
-                  Ready to play game with your partner, enjoy
+                  Ready to play games around you, enjoy
                 </Text>
               </Row>
             </div>
